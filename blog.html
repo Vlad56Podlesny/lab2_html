@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Останні новини</title>
+    <style>
+        body { margin: 12px; background: #fafafa; color: #111; font: 16px Arial, sans-serif; }
+        header, article, aside, footer { background: white; border: 1px solid #ddd; border-radius: 10px; padding: 16px; }
+        header { margin-bottom: 12px; }
+        h1, h2 { font-size: 20px; margin: 0 0 12px; }
+        nav a { margin-right: 16px; }
+        .layout { display: grid; grid-template-columns: 2fr 1fr; gap: 12px; align-items: start; }
+        main { display: grid; gap: 12px; }
+        article p { margin: 10px 0; }
+        time { color: #666; font-size: 14px; }
+        aside ul { padding-left: 20px; }
+        aside li { margin-bottom: 14px; }
+        footer { margin-top: 12px; text-align: center; }
+        a { color: #174f84; }
+        @media (max-width: 600px) { .layout { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header id="home">
+        <h1>Останні новини</h1>
+        <nav aria-label="Основна навігація">
+            <a href="#home">Головна</a>
+            <a href="#news">Новини</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+    </header>
+    <div class="layout">
+        <main id="news">
+            <article id="campus">
+                <h2>Відкрито новий кампус університету</h2>
+                <p><time datetime="2026-09-01">1 вересня 2026</time></p>
+                <p>В університеті відкрили новий кампус із сучасними аудиторіями та комп’ютерними лабораторіями. Студенти отримали додаткові місця для навчання, командної роботи та відпочинку.</p>
+                <p><strong>Автор: Ірина Коваль</strong></p>
+            </article>
+            <article id="competition">
+                <h2>Стартував конкурс студентських проєктів</h2>
+                <p><time datetime="2026-09-05">5 вересня 2026</time></p>
+                <p>Університет оголосив конкурс студентських проєктів у сфері інформаційних технологій. Для участі потрібно сформувати команду, підготувати опис ідеї та подати заявку до 15 жовтня.</p>
+                <p><strong>Автор: Олег Петренко</strong></p>
+            </article>
+            <article id="practice">
+                <h2>Результати літньої практики</h2>
+                <p><time datetime="2026-09-10">10 вересня 2026</time></p>
+                <p>Студенти завершили літню практику в партнерських компаніях університету. Під час практики вони створювали вебсторінки, працювали з Git і презентували результати командних проєктів.</p>
+                <p><strong>Автор: Марія Шевчук</strong></p>
+            </article>
+        </main>
+        <aside>
+            <h2>Популярне</h2>
+            <ul>
+                <li><a href="#campus">Новий кампус університету</a></li>
+                <li><a href="#competition">Конкурс студентських проєктів</a></li>
+                <li><a href="#practice">Підсумки літньої практики</a></li>
+                <li><a href="resume.html">Як оформити резюме</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer id="contacts">
+        <hr>
+        <p>© 2026 Останні новини.</p>
+        <p>Шипілов Станіслав Олександрович, група 243-5.
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">random@mail.com</a>
+        </p>
+    </footer>
+</body>
+</html>
